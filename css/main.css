@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=News+Cycle:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+h1{
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+h2{
+    color: #3F72AF;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+}
+
+h3 {
+    color: #112D4E;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* HEADER */
+
+header {
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 90px;
+    padding-left: 40px;
+    background-color: #DBE2EF; 
+    color: #112D4E; 
+}
+
+.botones-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    
+}
+.user_title{
+    color:#112D4E;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.btn-azul{
+    background-color: #1973b8;
+    color: #fff;
+    text-align: center;
+    max-width: 100%;
+    line-height: 30px;
+    padding: 12px 32px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: #696464; 
+    color: #ffffff; 
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    background-color: #F9F7F7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.personajes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.personaje{
+    width: 30%;
+    height: 700px;
+    background-color: #3F72AF;
+    margin-bottom: 50px;
+
+}
+
+.personaje_title{
+    color:#DBE2EF;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.personaje_img{
+   width: 65%; 
+   height: 140px;
+}
+
+
+.contenedor-imagen {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+/* FOOTER */
+
+footer {
+    background-color: #DBE2EF;
+    color: #112D4E;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.contact {
+    flex:1;
+    padding: 10px;
+    border-right: 1px solid #112D4E; 
+    text-align: center;
+}
+
+.redes{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.foot-text{
+    margin: 20px 10px 20px 10px ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    margin: 20px 10px 20px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.social-img{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+a {
+    color: #112D4E;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+    color: #3F72AF; 
+}
+
+
+/* CREAR PERSONAJE */
+
+.content-crear {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 20px;
+}
+
+.componente {
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.imagen-seleccionada {
+    margin: 10px;
+    border-left: 1px solid #112D4E; 
+    padding-left: 40px;
+}
+
+.img-ropa{
+    width: 200px;
+    height: 200px;
+}
+
+.separar-eleccion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap:40px;
+}
+
+input {
+    width: 20%;
+    padding: 20px;
+    margin: 10px 5px 5px 30px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+
+}
+#pjconropa {
+    justify-content: center;
+}
+
+.btnIndexuser{
+    width: 50%;
+    margin-left: 32px;
+}
+
+
+
+@media screen and (max-width:425px) {
+    
+    .container{
+        width: 100%;
+    }
+    .personaje{
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+    }    
+    .botones-header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 60px;
+        width: 80%;
+        
+    }
+    header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 90px;
+        padding-left: 40px;
+        background-color: #DBE2EF; 
+        color: #112D4E; 
+        padding-bottom: 20px;
+    }
+    .content{
+        width: 100%;
+    }
+    input {
+    width:75%;
+    }
+
+}
